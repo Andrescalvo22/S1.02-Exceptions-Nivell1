@@ -4,29 +4,29 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-        Venda venda1= new Venda();
+        Sell sell1= new Sell();
 
         try {
-        venda1.calcularTotal();
-        }catch (VendaBuidaException e){
-            System.out.println("Excepcio capturada: " + e.getMessage());
+        sell1.calculateTotal();
+        }catch (EmptySellException e){
+            System.out.println("Caught Exception: " + e.getMessage());
         }
-    Venda venda2= new Venda();
+    Sell sell2= new Sell();
 
-        venda2.AffegirProducte(new Producte("Pa", 1.0));
-        venda2.AffegirProducte(new Producte("Blat", 1.5));
+        sell2.AddProduct(new Product("Bread", 1.0));
+        sell2.AddProduct(new Product("Corn", 1.5));
 
         try{
-        venda2.calcularTotal();
-        }catch (VendaBuidaException e){
-            System.out.println("Exceptio capturada: " + e.getMessage());
+        sell2.calculateTotal();
+        }catch (EmptySellException e){
+            System.out.println("Caught Exception: " + e.getMessage());
         }
         List<String> list1= new ArrayList<>();
         list1.add("Element 1");
         try{
             System.out.println(list1.get(3));
         }catch (IndexOutOfBoundsException e){
-            System.out.println("Excepcio capturada: " + e.getMessage());
+            System.out.println("Caught Exception: " + e.getMessage());
         }
     }
 }
