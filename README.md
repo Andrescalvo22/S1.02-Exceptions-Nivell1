@@ -1,34 +1,32 @@
-# 📄Descripció - Enunciat de l'exercici
+📄Description – Exercise Statement
+Create the classes Producte and Venda.
+Venda must have a calcularTotal() method that throws the custom exception VendaBuidaException if there are no products.
+The exception should display the message: "Per fer una venda primer has d’afegir productes" (To make a sale, you must first add products).
+You must also handle an IndexOutOfBoundsException.
 
-Crear les classes **Producte** i **Venda**.  
-**Venda** té un mètode `calcularTotal()` que llença l’excepció personalitzada **VendaBuidaException** si no hi ha productes.  
-La excepció mostra el missatge “Per fer una venda primer has d’afegir productes”.  
-També cal capturar una excepció `IndexOutOfBoundsException`.
+💻Technologies Used
+Java SE 21
 
-# 💻Tecnologies Utilitzades
+IDE (IntelliJ, Eclipse, etc.)
 
-- Java SE 11  
-- IDE (IntelliJ, Eclipse, etc.)
+📋Requirements
+Java JDK 21 or higher
 
-# 📋Requisits
+Knowledge of exception handling in Java
 
-- Java JDK 11 o superior  
-- Conèixer gestió d’excepcions a Java
+🛠️Installation
+Clone or download the project.
 
-# 🛠️Instal·lació
+Open it in an IDE.
 
-1. Clonar o descarregar el projecte.  
-2. Obrir en un IDE.  
-3. Compilar les classes.
+Compile the classes.
 
-# ▶️Execució
+▶️Execution
+Run the main class with the main method to test the functionality and exception handling.
 
-Executar la classe principal amb el mètode `main` per provar la funcionalitat i excepcions.
+🌐Deployment
+This project is intended to be run locally as a practice exercise, and therefore has no specific deployment process.
 
-# 🌐Desplegament
+🤝Contributions
+Fork the repository, create a branch, commit your changes, and submit a pull request.
 
-Aquest projecte està pensat per a ser executat localment com a pràctica, per tant, no disposa d’un procés específic de desplegament.
-
-# 🤝Contribucions
-
-Fer fork, crear branca, commit i enviar pull request.
