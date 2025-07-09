@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sell {
+public class Sale {
 
     private final List<Product> products;
     private double totalPrice;
 
-    public Sell(){
+    public Sale(){
         products= new ArrayList();
         totalPrice= 0.0;
 
@@ -14,9 +14,9 @@ public class Sell {
     public void AddProduct(Product p){
         products.add(p);
     }
-public void calculateTotal() throws EmptySellException{
+public void calculateTotal() throws EmptySaleException{
         if(products.isEmpty()){
-            throw new EmptySellException();
+            throw new EmptySaleException();
         }
 totalPrice= 0;
         for(Product p : products) {

@@ -3,29 +3,29 @@ import java.util.List;
 
 
 public class Main {
-    public static void main(String[] args){
-        Sell sell1= new Sell();
+    public static void main(String[] args) {
+        Sale sale1 = new Sale();
 
         try {
-        sell1.calculateTotal();
-        }catch (EmptySellException e){
+            sale1.calculateTotal();
+        } catch (EmptySaleException e) {
             System.out.println("Caught Exception: " + e.getMessage());
         }
-    Sell sell2= new Sell();
+        Sale sale2 = new Sale();
 
-        sell2.AddProduct(new Product("Bread", 1.0));
-        sell2.AddProduct(new Product("Corn", 1.5));
+        sale2.AddProduct(new Product("Bread", 1.0));
+        sale2.AddProduct(new Product("Corn", 1.5));
 
-        try{
-        sell2.calculateTotal();
-        }catch (EmptySellException e){
+        try {
+            sale2.calculateTotal();
+        } catch (EmptySaleException e) {
             System.out.println("Caught Exception: " + e.getMessage());
         }
-        List<String> list1= new ArrayList<>();
+        List<String> list1 = new ArrayList<>();
         list1.add("Element 1");
-        try{
-            System.out.println(list1.get(3));
-        }catch (IndexOutOfBoundsException e){
+        try {
+            System.out.println(list1.get(1));
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("Caught Exception: " + e.getMessage());
         }
     }
